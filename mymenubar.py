@@ -7,13 +7,15 @@ class mymenubar(QMenuBar):
         myedit = self.addMenu("编辑(E)")
         mynew=myfile.addAction("新建(N)")
         myopen=myfile.addAction("打开(O)")
-        mysave=myfile.addAction("保存(S)")
+        self.mysave=myfile.addAction("保存(S)")
         myedit.addAction("剪切(T)")
         myedit.addAction("复制(C)")
 
         """功能实现"""
         mynew.triggered.connect(lambda :print("新建"))
         myopen.triggered.connect(lambda: print("打开"))
-        mysave.triggered.connect(lambda: print("保存"))
+        # mysave.triggered.connect(lambda :print(text.toPlainText()))
+
+
 
 
