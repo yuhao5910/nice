@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import *
+from PySide6.QtWidgets import *
 class myTextWidget(QTextEdit):
     """文本窗口"""
     def __init__(self,parent=None):

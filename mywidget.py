@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+from PySide6.QtWidgets import *
+from PySide6.QtGui import *
 class mywidget(QWidget):
     """窗口类"""
     def __init__(self):

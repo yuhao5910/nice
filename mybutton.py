@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import *
+from PySide6.QtWidgets import *
 class myplaybtn(QPushButton):
     """开始类"""
     def __init__(self,parent=None):
@@ -15,3 +15,8 @@ class myendbtn(QPushButton):
         self.setText('end')
         self.move(250,250)
         self.clicked.connect(lambda : sys.exit())
+class mysavebtn(QPushButton):
+    def __init__(self,parent=None):
+        super(mysavebtn, self).__init__(parent)
+        self.setText("确定")
+        self.move(360,50)

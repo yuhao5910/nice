@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import *
+from PySide6.QtWidgets import *
 class mymenubar(QMenuBar):
     """菜单类"""
     def __init__(self,parent=None):
